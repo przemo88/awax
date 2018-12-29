@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AWAX</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+</head>
+<body>
+
+	<style>
+	.menu{
+	max-width: 70%;
+	height: 100%;
+	margin:0 auto;
+
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	}
+
+	.menu li{
+		height: 95%;
+	  	display: flex;
+	  	align-items: center;
+	}
+
+	.menu li:first-child{
+		flex-basis: 15%;
+	  	border-bottom: none;
+	}
+
+	.row_menu{
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	position: fixed;
+	}
+
+	.row_hero{
+	height: 850px;
+	background-image: url('../images/hero.png');
+	background-size:cover;
+	z-index: 10;
+	}
+}
+	</style>
+
+<section class="container row_menu">
+	<ul class="menu">
+		<li><img src="images\logo.png"></li>
+		<li>HOME</li>
+		<li>ABOUT US</li>
+		<li>SERVICES</li>
+		<li>OUR PROJECTS</li>
+		<li>OUR TEAM</li>
+		<li>HAPPY CLIENT</li>
+		<li>PRICE</li>
+		<li>SOME FACTS</li>
+		<li>CONTACT US</li>
+	</ul>
+</section>
+
+<section class="container row_hero about">
+
+<ul class="about">
+		<li>DESIGN IN ABOUT</li>
+		<li>COMMUNICATION</li>
+		<li>CALL US: +00 1234 5678</li>
+		<li></li>
+</ul>
+</section>
+
+<button class="get_in_touch">sample</button>
+
+</body>
+</html>

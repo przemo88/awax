@@ -1,0 +1,25 @@
+@mixin btn_get{
+	font-size: 12px;
+	background-color: #f58220;
+	border-radius: 20px;
+	height: 50px;
+	width: 150px;
+	color: white;
+	font-weight: bold;
+ 
+	&:hover{
+		background-color: black;
+	}
+}
+
+.btn_get{
+	@include btn_get;
+}
+
+@mixin btn_more{
+	@include btn_get;
+}
+
+.btn_more{
+	@include btn_more;
+}

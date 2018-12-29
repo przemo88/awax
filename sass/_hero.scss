@@ -1,0 +1,63 @@
+@mixin row_hero{
+	@include row_menu;
+	height: 850px;
+	background-image: url('../images/hero.png');
+	background-size:cover;
+}
+
+.row_hero{
+	@include row_hero;
+}
+
+.design{
+	color: white;
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 72px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	z-index: 1;
+
+	ul{
+		margin-top: 250px;
+		list-style-type: none;
+	}
+
+	li:nth-child(2){
+		color: #f58220;
+	}
+
+	li:nth-child(3){
+		font-size: 24px;
+	}
+
+}
+
+.phone{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f58220;
+  margin-top: 200px;
+  background-image: url('../images/phone.png');
+
+  &:hover{
+  	background-color: black;
+  }
+}
+
+.flex_container{
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+@mixin more_container{
+	@include flex_container;
+	justify-content: flex-start;
+	top: 150px; 
+}
