@@ -1,0 +1,79 @@
+@mixin row_services{
+	@include row_menu;
+	height: 400px;
+}
+
+.row_services{
+	@include row_services;
+	background-color: black;
+}
+
+@mixin div_header{
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	font-size: 14px;
+	flex: 24%;
+}
+
+@mixin second_div{
+	&:nth-child(2){
+	font-size: 14px;
+	font-weight: normal;
+	}
+
+}
+
+
+@mixin services{
+	width: 80%;
+	margin: 0 auto;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'Montserrat', sans-serif;
+  
+
+	 div{
+    	
+    	@include div_header;
+   	
+
+   		}
+
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		li{
+			font-size: 12px;
+			color: #595959;
+		}
+	}
+}
+.services{
+	@include services;
+
+	div{
+
+   		@include one_div;
+
+		@include second_div;
+
+		li:nth-child(2){
+			font-weight: bold;
+			font-size: 14px;
+			color: white;
+		}
+	}
+}
+
+@mixin border($color){
+	border-left:  1px solid $color;
+	border-right:  1px solid $color;
+}
+
+.border{
+	@include border(white);
+}

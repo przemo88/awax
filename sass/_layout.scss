@@ -7,3 +7,46 @@ body{
 	width: 100%;
 }
 
+@mixin margin_top{
+	@for $a from 1 through 30{
+		.mt-#{$a}{
+			margin-top: (5px * $a)+5px;
+		}
+	}
+}
+
+@include margin_top;
+
+@mixin one_div{
+	&:first-child, &:nth-child(2){
+   			flex: 1 1 100%;
+   			font-size: 24px;
+   			font-weight: bold;
+   		}
+}
+
+@mixin center_div($size1,$size2,$color1,$color2){
+
+	div{
+
+	display: flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+	
+		&:first-child{
+			font-weight: bold;
+			font-size: $size1;
+			color: $color1;
+		}
+		&:nth-child(2)
+		{
+			font-size: $size2;
+			color: $color2;
+		}
+	}
+}
+
+.btn_position{
+	display: flex;
+	justify-content: center;
+}

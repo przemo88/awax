@@ -3,11 +3,10 @@
 	height: 100px;
 }
 
-@mixin menu{
+@mixin top_menu{
 	width: 80%;
 	height: 100px;
-	margin:0;
-	position: fixed;
+	margin:0 auto;
 	list-style-type: none;
 	display: flex;
 	justify-content: center;
@@ -21,15 +20,24 @@
 	  	display: flex;
 		align-items: center;
 		padding:0 1%; 
+
 	  	&:hover{
 	  		border-bottom: 5px solid yellow;
 	  	}
 
-	  	&:first-child{
+	  	
+	}
+}
+
+@mixin menu{
+
+	@include top_menu;
+	position: fixed;
+
+	li:first-child{
 	  		flex-basis: 10%;
 	  		border-bottom: none;
 	  	}
-	}
 }
 
 .menu{
