@@ -52,8 +52,16 @@
 		}
 	}
 }
-.services{
-	@include services;
+
+@mixin li_second_child($color, $size){
+	li:nth-child(2){
+			font-weight: bold;
+			font-size: $size;
+			color: $color;
+		}
+}
+
+@mixin services_div{
 
 	div{
 
@@ -61,12 +69,15 @@
 
 		@include second_div;
 
-		li:nth-child(2){
-			font-weight: bold;
-			font-size: 14px;
-			color: white;
-		}
+		@include li_second_child(white,14px);
+		
 	}
+}
+.services{
+
+	@include services;
+	@include services_div;
+	
 }
 
 @mixin border($color){

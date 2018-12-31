@@ -479,4 +479,123 @@ body {
 .project_images img:hover {
   opacity: 0.5;
 }
+
+.row_team {
+  width: 100%;
+  height: 100px;
+  background-image: url("../images/team.png");
+  height: 700px;
+}
+
+.center_div_team div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.center_div_team div:first-child {
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+
+.center_div_team div:nth-child(2) {
+  font-size: 12px;
+  color: white;
+}
+
+.center_div_team div:first-child {
+  padding-top: 50px;
+}
+
+.team {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.team div {
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 14px;
+  -ms-flex: 24%;
+      flex: 24%;
+}
+
+.team ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team ul li {
+  font-size: 12px;
+  color: #595959;
+}
+
+.team div:first-child, .team div:nth-child(2) {
+  -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.team div:nth-child(2) {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.team div li:nth-child(2) {
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+}
+
+.team ul {
+  background-color: white;
+  width: 95%;
+  height: 150%;
+  text-align: flex-end;
+}
+
+.team ul li:nth-child(2) {
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+}
+
+.social {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  margin-top: auto;
+}
+
+.social span {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #bebebe;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: red;
+}
+
+.social span i {
+  margin-top: 25%;
+}
 /*# sourceMappingURL=style.css.map */

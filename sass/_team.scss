@@ -1,0 +1,63 @@
+.row_team{
+	@include row_menu;
+	background-image: url('../images/team.png');
+	height: 700px;
+}
+
+.center_div_team{
+	@include center_div(24px,12px,white,white);
+
+	div:first-child{
+		padding-top: 50px;
+	}
+}
+
+
+
+.team{
+	
+	@include services;
+
+	@include services_div;
+
+	ul{
+		background-color: white;
+		width: 95%;
+		height: 150%;
+		text-align:flex-end; 
+
+
+ 		@include li_second_child(black,24px);
+
+ 		li{
+
+ 		}
+	}
+
+} 
+
+
+		.social{
+			display: flex;
+			flex-wrap: wrap;
+			text-align: center;
+			margin-top: auto;
+			
+			
+			span{
+			display: flex;
+			justify-content: space-around;
+			background-color: #bebebe;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			color:red;
+
+			i{
+				margin-top:25%;
+			}
+		}
+	}
+
+	
+
