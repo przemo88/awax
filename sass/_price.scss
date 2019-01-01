@@ -1,0 +1,52 @@
+.row_price{
+	@include row_menu;
+	background-color: #ededed;
+	height: 650px;
+}
+
+.price{
+	@include services;
+
+	@include services_div;
+
+	@include li_second_child(#242424,30px);
+
+	ul li{
+		font-size: 10px;
+	}
+
+
+	.month{
+		color: #cecece;
+		font-size: 14px;
+	}
+
+	div:first-child, .title{
+		color: black;
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	div:nth-child(2)
+	{
+		color: #3b3b3b;
+	}
+
+	.back{
+		background-color: white;
+		flex: 1 0 21%;	
+		margin: 0 1%;
+		padding-top: 3%;
+		height: 400px;
+		margin-top: 50px;
+	}
+}
+
+.btn_price{
+	@include btn_more;
+	background-color: black;
+
+	&:hover{
+		background-color: #f58220;
+	}
+}

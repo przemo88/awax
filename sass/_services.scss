@@ -68,10 +68,9 @@
    		@include one_div;
 
 		@include second_div;
-
-		@include li_second_child(white,14px);
-		
 	}
+
+	@include li_second_child(white,14px);
 }
 .services{
 

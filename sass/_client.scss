@@ -1,0 +1,39 @@
+.row_client{
+	@include row_menu;
+	background-color:#f7f7f7;
+	height: 500px;
+}
+
+.client{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  list-style:none;
+  text-align: center;
+
+  div{
+ 	padding-top: 15px;
+
+ 	&:nth-child(4), &:nth-child(4){
+ 		font-weight: bold;
+ 	}
+
+ 	&:nth-child(7){
+ 		width: 60%;
+ 		margin: auto;
+ 		color: #c0c0c0;
+ 	}
+}
+
+}
+
+.center_div_client{
+	@include center_div(24px,12px,black,#c0c0c0);
+
+	div:nth-child(2){
+		font-weight: bold;
+	}
+}
+
+

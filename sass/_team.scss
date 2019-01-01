@@ -24,7 +24,7 @@
 		background-color: white;
 		width: 95%;
 		height: 150%;
-		text-align:flex-end; 
+	
 
 
  		@include li_second_child(black,24px);
@@ -35,8 +35,6 @@
 	}
 
 } 
-
-
 		.social{
 			display: flex;
 			flex-wrap: wrap;
