@@ -23,38 +23,41 @@
 	ul{
 		background-color: white;
 		width: 95%;
-		height: 150%;
+		padding: 50px 0;
 	
 
 
  		@include li_second_child(black,24px);
 
- 		li{
-
  		}
-	}
 
 } 
 		.social{
-			display: flex;
-			flex-wrap: wrap;
-			text-align: center;
-			margin-top: auto;
 			
-			
-			span{
+		
 			display: flex;
-			justify-content: space-around;
-			background-color: #bebebe;
-			width: 30px;
-			height: 30px;
-			border-radius: 50%;
-			color:red;
+			padding:0 5%;
 
-			i{
-				margin-top:25%;
+				span{
+				
+				margin-top: 25px;
+				background-color: #bebebe;
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				color:white;
+
+				&:hover{
+					background: #b88b58;
+				}
+
+				i{
+					margin-top:25%;
+				}
+
+				
 			}
-		}
+		
 	}
 
 	

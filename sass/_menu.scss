@@ -33,6 +33,7 @@
 
 	@include top_menu;
 	position: fixed;
+	z-index: 10;
 
 	li:first-child{
 	  		flex-basis: 10%;
