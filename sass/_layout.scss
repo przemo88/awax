@@ -26,12 +26,13 @@ body{
 }
 
 @mixin center_div($size1,$size2,$color1,$color2){
-
+	
 	div{
 
 	display: flex;
 	justify-content: center;
 	font-family: 'Montserrat', sans-serif;
+
 
 		&:first-child{
 			font-weight: bold;

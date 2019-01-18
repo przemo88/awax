@@ -4,7 +4,7 @@
 	height: 500px;
 }
 
-.client{
+@mixin client{
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -23,10 +23,15 @@
  		width: 60%;
  		margin: auto;
  		color: #c0c0c0;
- 	}
+ 		}
+	}
 }
 
+.client{
+	@include client;
 }
+
+
 
 .center_div_client{
 	@include center_div(24px,12px,black,#c0c0c0);
