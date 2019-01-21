@@ -1,0 +1,102 @@
+.row_footer{
+	@include row_menu;
+	background: black;
+	height: 260px;
+}
+
+.footer{
+	width: 80%;
+	max-width: 1280px;
+	margin: 0 auto;
+	height: 260px;
+	display: flex;
+	font-family: 'Montserrat', sans-serif; 
+	
+	div{
+		flex-grow: 1;
+		min-width: 33%;
+
+		&:nth-child(2){
+			padding: 0 2%;
+		}
+	}
+}
+
+.footer_social{
+	
+	display: flex;
+	justify-content: flex-start;
+
+	
+	
+	span{
+		margin-left: 1%;
+		margin-top: 25px;
+		background-color: #bebebe;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		color:white;
+
+		&:hover{
+			background-color: black;
+		}
+
+		&:last-child{
+			margin: 220px 0px 0px 0px;
+			width: 160px;
+			background-color: transparent;
+			position: absolute;
+		}
+	}	
+
+		i{
+			margin-top: 25%;
+			margin-left: 25%; 
+		}
+			
+}
+
+.description{
+	width: 95%;
+	font-size: 16px;
+	margin-top: 25px;
+	color: #7e7e7e;
+}
+
+.subscribe{
+	margin-top: 25px;
+	height: 80%;
+	font-size: 20px;
+	background-color: #373737;
+
+	form{
+		width: 60%;
+		margin: 10% auto;
+	}
+
+	input{
+		width: 100%;
+		margin: 0 auto;
+		font-weight: bold;
+		color: #9e9e9e;
+		border: none;
+		border-bottom: 2px solid white;
+		background-color: transparent;
+		text-align: center;
+		font-family: 'Montserrat', sans-serif; 
+		font: 1em/1.25em sans-serif;
+	}
+	
+}
+
+.scroll{
+  @include phone;
+  position: absolute;
+  background-image: url('../images/scroll.png');
+  margin-top: -25px;
+}
+
+#top{
+	
+}

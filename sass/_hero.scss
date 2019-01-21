@@ -35,29 +35,34 @@
 
 }
 
-.phone{
+@mixin phone{
   width: 60px;
   height: 60px;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f58220;
-  margin-top: 200px;
   background-image: url('../images/phone.png');
+  position: fixed;
 
   &:hover{
   	background-color: black;
   }
 }
 
-.flex_container{
-	display: flex;
-	justify-content: flex-end;
+.phone{
+  @include phone;
 }
 
+@mixin flex_container_end{
+	display: flex;
+	justify-content: flex-end;
+} 
+.flex_container_end{
+	@include flex_container_end;
+}
 
-@mixin more_container{
-	@include flex_container;
+.flex_container_start{
+	@include flex_container_end;
 	justify-content: flex-start;
-	top: 150px; 
 }

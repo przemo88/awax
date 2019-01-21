@@ -5,13 +5,20 @@
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
   	width: 80%;
-  	justify-content: center;
+    max-width: 1280px;
+  
 
     div{
     	flex: 1 1 50%;
+        justify-content: center;
+     
    		text-align: center;
-   		
-   		@include one_div;
+   	  
+      @include one_div;
+
+      &:first-child{
+        flex-grow: 1;
+      }
 
    		&:nth-child(2){
    			font-size: 16px;

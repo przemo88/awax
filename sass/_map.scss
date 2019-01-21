@@ -1,0 +1,43 @@
+.row_map{
+	@include services;
+}
+
+.map{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.info{
+	width: 500px;
+	background-color: white;
+	color: #7e7e7e;
+	margin-top: 100px;
+	position: absolute;
+	display: flex;
+	flex-direction: column;	
+
+
+	div{
+		padding: 5px 0px 5px 25px;
+		justify-content: flex-start; 
+		align-items: center;
+		height: 60px;
+	}
+
+	span{
+		border-radius: 50%;
+		width: 35px;
+		height: 35px;
+		background-color: #aeaeae;
+		margin-right: 5%;
+	}
+
+	img{
+		padding-top: 25%;
+	
+		&:first-child{
+			padding-top: 25%;
+		}
+	}
+}
+

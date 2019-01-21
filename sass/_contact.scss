@@ -1,3 +1,9 @@
+.row_contact{
+	@include row_menu;
+	background-color:#f7f7f7;
+	height: 550px;
+}
+
 .contact{
 	@include client;
 		

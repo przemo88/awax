@@ -1,7 +1,7 @@
 .row_premium{
 	@include row_menu;
 	background-color: white;
-	height: 650px;
+	height: 580px;
 }
 
 .center_div_premium{
@@ -10,10 +10,11 @@
 
 .premium{
 	width: 80%;
-	margin: 5% auto;
+	margin: auto;
 	display: flex;
 	font-family: 'Montserrat', sans-serif;
 	border-bottom: 1px solid #b8b8b8;
+   max-width: 1280px;
 
 	span{
    		padding-left: 10%;
@@ -49,6 +50,10 @@
    img{
    	@include padding;
    }
+}
+
+.gm-style .place-card div{
+ color: red;
 }
 
 
