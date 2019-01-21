@@ -1,3 +1,10 @@
+.row_facts{
+	@include row_menu;
+	background-color: black; 
+	height: 400px;
+}
+
+
 .facts{
 	@include services;
 	@include services_div;

@@ -1,0 +1,290 @@
+@media(max-width: 1325px)
+{
+	.project_images{
+			flex: 1 0 33%;
+
+	}
+
+	.row_project{
+		height: 1020px;
+	}
+
+	.row_footer{
+		height: 300px;
+	}
+
+	@media(max-width: 1264px)
+	{
+		.menu{
+			font-size: 12px;
+		}
+	}
+
+}
+
+@media(max-width: 1080px)
+{
+
+	.menu{
+			width: 100%;
+			text-align: center;
+			flex-direction: column;
+			height: 500px;
+			position: absolute;
+			
+			ul{
+				padding: 0;
+				margin: 0;
+
+				li{
+				height: 30px;
+				font-size: 20px;
+				padding: 5px 0px;
+				width: 100%;
+				justify-content: center;
+
+				&:hover{
+					border-bottom: none;
+					}
+				}
+			}
+		}
+		
+		.design ul{
+			margin-top: 500px;
+		}	
+
+		.top{
+			margin-top: 20px;
+		}
+
+		.row_footer{
+		height: 350px;
+
+	.subscribe{
+		height: 300px;
+
+	input{
+		font-size: 14px;
+		}
+	}
+}
+
+
+@media(max-width: 700px)
+{	
+	@mixin margin_small_top{
+	@for $a from 1 through 30{
+		.mt-s-#{$a}{
+			margin-top: (5px * $a)+5px;
+			}
+		}
+	}
+
+	@include margin_small_top;
+
+
+	.btn_price{
+		&:hover{
+			background-color: black;
+		}
+	}
+
+	.btn_more, .btn_project, .btn_get{
+		&:hover{
+			background-color: #f58220;
+		}
+	}
+
+	.design{
+		font-size: 65px;
+	}
+
+	.about{
+		height: 600px;
+	}
+
+	.row_services{
+		height: 850px;
+	}
+
+	.services{
+		width: 100%;
+
+		div{
+			flex: 100%;
+		}
+	}
+
+	.border{
+		@include border(transparent);
+	}
+
+	.row_project{
+		height: 2650px;
+	}
+
+	.project{
+		width: 100%;
+
+		div{
+			width: 100%;
+
+			.project_menu{
+				width: 90%;
+				font-size: 12px;
+
+				li{
+					&:hover{
+						border-bottom: none;
+					}
+				}
+			}
+		}
+
+		li{
+			flex: 100%;
+		}
+}		
+
+	.project_images{
+		img{
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+
+	.row_logo{
+		height: 600px;
+	}
+
+	.logo{
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+
+		img{
+			padding: 20px 0px;
+		}
+	}
+	
+	.row_team{
+		height: 1600px;
+		background: black;
+	}
+
+	.team{
+		width: 50%;
+	}
+
+	.social{
+
+		span{
+			&:hover{
+				background-color: #bebebe;
+			}
+		}
+	}
+
+	.row_client{
+		height: 600px;
+	}
+
+	.logo{
+		width: 100%;
+	}
+
+	.row_price{
+		height: 2000px;
+		width: 100%;
+	}
+
+	.price{
+		width: 100%;
+
+		.back{
+			flex: 1 1 100%;
+			margin: 20px 0px;
+		}
+	}
+
+	.row_premium{
+		height: 1100px;
+	}
+
+.premium{
+	width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 0px 40px 0px;
+
+	div{
+		padding: 5px 0px;
+		flex-direction: column;
+		flex: 1 0 100%;
+	}
+}
+
+
+	.row_facts{
+		height: 950px;
+	}
+
+	.facts{
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+
+		ul{
+			min-width: 100%;
+		}
+	}
+
+	.share{
+		width: 100%;
+	}
+
+	.row_footer{
+		height: 500px;
+	}
+
+	.footer{
+
+		width: 100%;
+		flex-direction: column;
+
+		div{
+			margin-top: 100px;
+			width: 100%;
+			justify-content: center;
+
+			&:nth-child(2){
+				text-align: center;
+				width: 95%;	
+			}
+		}
+			
+	}
+
+	.footer_social{
+
+		span{
+
+			&:hover{
+				background-color: #bebebe;
+			}
+
+			&:last-child{
+			text-align: center;
+			margin-top: 300px;
+				}
+			}
+		}		
+	}
+}
+
+
+
+

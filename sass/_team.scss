@@ -33,36 +33,33 @@
 
 } 
 
-@mixin social{
+.social{
 	
-}
-		.social{
-			
+
+	display: flex;
+	padding:0 5%;
+
+		span{
 		
-			display: flex;
-			padding:0 5%;
+		margin-top: 25px;
+		background-color: #bebebe;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		color:white;
 
-				span{
-				
-				margin-top: 25px;
-				background-color: #bebebe;
-				width: 30px;
-				height: 30px;
-				border-radius: 50%;
-				color:white;
+		&:hover{
+			background: #b88b58;
+		}
 
-				&:hover{
-					background: #b88b58;
-				}
+		i{
+			margin-top:25%;
+		}
 
-				i{
-					margin-top:25%;
-				}
-
-				
-			}
 		
 	}
+
+}
 
 	
 
