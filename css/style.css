@@ -1371,11 +1371,55 @@ iframe {
     height: 300px;
   }
   .row_footer .subscribe input {
-    font-size: 14px;
+    width: 100% !important;
   }
 }
 
-@media (min-width: 401px) and (max-width: 700px) {
+@media (max-width: 1080px) and (min-width: 780px) and (max-width: 1021px) {
+  .team {
+    width: 100%;
+  }
+  .team ul {
+    width: 100%;
+  }
+  .row_about {
+    height: 550px;
+  }
+  .btn_more {
+    margin-top: 100px;
+  }
+  .row_project {
+    height: 750px;
+  }
+  .price {
+    width: 100%;
+  }
+  .row_premium {
+    height: 800px;
+  }
+  .box {
+    padding: 10px 0;
+  }
+  .row_footer {
+    height: 450px;
+  }
+  #sub {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1080px) and (max-width: 1020px) and (min-width: 701px) {
+  .images_list li {
+    margin: 0;
+    padding: 0;
+  }
+  .images_list img {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1080px) and (min-width: 401px) and (max-width: 700px) {
   .row_menu {
     height: 570px;
   }
@@ -1779,14 +1823,14 @@ iframe {
     color: black;
   }
   #awax:hover {
-    border: none;
+    background-color: none !important;
   }
   .btn_subscribe {
     margin-top: 0;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1080px) and (max-width: 400px) {
   .row_menu {
     height: 570px;
   }
@@ -2189,15 +2233,12 @@ iframe {
     margin-top: 470px;
     color: black;
   }
-  #awax:hover {
-    border: none;
-  }
   .btn_subscribe {
     margin-top: 0;
   }
 }
 
-@media (min-width: 150px) and (max-width: 352px) {
+@media (max-width: 1080px) and (min-width: 150px) and (max-width: 352px) {
   .row_services {
     margin-top: 350px !important;
     height: 900px;
@@ -2233,6 +2274,59 @@ iframe {
   }
   #awax:hover {
     background-color: white;
+  }
+  .btn_subscribe {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 1080px) {
+  #sub {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .btn_more {
+    margin: 150px 0 0 35%;
+  }
+  .row_services {
+    margin-top: 100px;
+  }
+  .btn_project {
+    margin-top: 2400px;
+  }
+  .team {
+    margin-top: 3300px;
+  }
+  .team ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 100%;
+  }
+  .row_premium {
+    height: 1250px;
+  }
+  .get_in_touch {
+    margin-top: 50px;
+  }
+  .row_contact {
+    height: 700px;
+  }
+  .btn_message {
+    margin-top: 50px;
+  }
+  .info {
+    width: 50%;
+  }
+  #sub {
+    font-size: 15px;
+  }
+  #awax {
+    margin-top: 525px;
+    color: white;
   }
   .btn_subscribe {
     margin-top: 0px;
