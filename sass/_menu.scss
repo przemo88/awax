@@ -12,7 +12,7 @@
 	justify-content: center; 
 	background-color: black;
 	color: white;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif; 
 	font-size: 14px;
 
 	li{
@@ -21,11 +21,9 @@
 		align-items: center;
 		padding:0 1%; 
 
-	  	&:hover{
+	  	&:nth-child(n+3):hover{
 	  		border-bottom: 5px solid yellow;
-	  	}
-
-	  	
+		}	
 	}
 }
 
@@ -49,3 +47,6 @@
 	@include row_menu;
 }
 
+.hamburger{
+	display: none;
+}
